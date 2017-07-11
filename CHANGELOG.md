@@ -4,6 +4,7 @@
 
 * Added more detailed exception message for `RealmMigrationNeeded`.
 * Bumping schema version only without any actual schema changes will just succeed even when the migration block is not supplied. It threw an `RealmMigrationNeededException` before in the same case.
+* Throw `IllegalStateException` when schema validation fails because of wrong declaration of `@LinkingObjects`.
 
 ### Bug Fixes
 
